@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="transicoes.css">
+    <title>Tela de Cadastro</title>
+    <script src="script.js"></script>
+</head>
+
+<body class="bg-neutral-100 font-[inter]">
+    <header class="flex justify-center align-center bg-black p-5">
+        <img src="../img/logo.png" class="h-50" alt="logo">
+    </header>
+    <main>
+        <div id="titulo_cadastro" class="flex justify-center align-center text-text text-2xl p-10">
+            <h1>Cadastre-se</h1>
+        </div>
+        <div class="flex justify-center align-center text-text text-lg m-1 p-5 flex-col gap-5">
+            <form action="" class="flex flex-col gap-15 p-10 bg-white rounded-lg" onsubmit="cadastroSucesso(event)">
+                <div id="cadastro_1" class="flex flex-col gap-5 animate-fade-in">
+                    <div class="flex flex-col gap-3">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Insira o seu nome"
+                            class="rounded-lg border border-gray-400 p-3">
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Insira o seu email"
+                            class="rounded-lg border border-gray-400 p-3">
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Insira a sua senha"
+                            class="rounded-lg border border-gray-400 p-3">
+                    </div>
+                    <div class="flex justify-center align-center">
+                        <button type="button"
+                            class="flex bg-green-500 w-60 text-white p-3 rounded-lg cursor-pointer justify-center m-5"
+                            onclick="proximoPasso()">Próximo passo</button>
+                    </div>
+                </div>
+                <div id="cadastro_2" class="hidden flex flex-col gap-5">
+                    <div class="flex flex-col gap-3">
+                        <label for="contatos_emergencia">Contatos de emergência</label>
+                        <input type="text" name="contatos_emergencia" id="contatos_emergencia"
+                            placeholder="( ) _____-____ , ..." class="rounded-lg border border-gray-400 p-3" onkeypress="formatPhone(this)">
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="intrucoes_tratamento">Instruções de tratamento</label>
+                        <textarea name="intrucoes_tratamento" id="intrucoes_tratamento" cols="30" rows="3"
+                            class="rounded-lg border border-gray-400 p-3"
+                            placeholder="Insira cuidados a serem pelo seguidos pelo motorista com o passageiro"></textarea>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="perfil_cliente">Perfil do cliente</label>
+                        <textarea name="perfil_cliente" id="perfil_cliente" cols="30" rows="3"
+                            class="rounded-lg border border-gray-400 p-3"
+                            placeholder="Insira informações que considera importante sabermos sobre você"></textarea>
+                    </div>
+                    <div class="flex justify-center align-center">
+                        <input type="submit" value="Cadastrar"
+                            class="bg-green-500 w-60 text-white p-3 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+                <div class="flex justify-center align-center">
+                    <div id="progresso" class="flex justify-center space-x-2 mb-4 bg-gray-100 p-3 rounded-full w-20">
+                        <div id="circulo_1" class="w-3 h-3 bg-black rounded-full"></div>
+                        <div id="circulo_2" class="w-3 h-3 bg-gray-400 rounded-full"></div>
+                    </div>
+                </div>
+                <div id="cadastro_sucesso" class="flex flex-col gap-15 p-10 bg-white rounded-lg hidden">
+                    <div class="flex flex-col gap-3 justify-center align-center items-center">
+                        <img src="../img/confirmado.png" alt="confirmado" class="w-40">
+                        <p class="text-black text-lg">Cadastro confirmado</p>
+                    </div>
+                    <div class="flex flex-col gap-3 justify-center align-center items-center">
+                        <a type="button"
+                            class="flex bg-green-500 w-60 text-white p-3 rounded-lg cursor-pointer justify-center m-5"
+                            href="login.html">Entrar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

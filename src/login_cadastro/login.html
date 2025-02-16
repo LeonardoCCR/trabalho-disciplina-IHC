@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="transicoes.css">
     <title>Tela de Login</title>
 </head>
 
@@ -13,10 +14,10 @@
         <img src="../img/logo.png" class="h-50" alt="logo">
     </header>
     <main>
-        <div class="flex justify-center align-center text-text text-2xl p-10">
+        <div class="flex justify-center align-center text-text text-2xl p-10 animate-fade-in">
             <h1>Bem-vindo(a)</h1>
         </div>
-        <div class="flex justify-center align-center text-text text-lg m-2 p-5 flex-col gap-5">
+        <div class="flex justify-center align-center text-text text-lg m-2 p-5 flex-col gap-5 animate-fade-in">
             <form action="" class="flex flex-col gap-15 p-10 bg-white rounded-lg">
                 <div class="flex flex-col gap-3">
                     <label for="email">Email</label>
@@ -33,11 +34,14 @@
                         class="bg-blue-500 w-60 text-white p-3 rounded-lg cursor-pointer">
                 </div>
             </form>
-            <div class="flex justify-center align-center text-text text-lg p-5 flex-wrap gap-5 text-lg">
-                <a href="" class="text-text text-decoration: underline">Esqueceu a senha?</a>
-                <a href="" class="text-text text-decoration: underline">Cadastrar cliente</a>
+            <div class="flex justify-center align-center text-text text-lg p-5 flex-wrap gap-5 text-lg animate-fade-in">
+                <a href="esqueceu_senha.html" class="text-text text-decoration: underline">Esqueceu a senha?</a>
+                <a href="cadastro_1.html" id="linkCadastrarCliente"
+                    class="text-text text-decoration: underline">Cadastrar
+                    cliente</a>
                 <a href="" class="text-text text-decoration: underline">Quero me tornar motorista</a>
             </div>
+        </div>
     </main>
     <footer>
 
