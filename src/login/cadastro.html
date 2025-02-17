@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <title>Viaja+</title>
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen font-[Poppins]">
+
+    <div class="bg-white w-full max-w-2xl rounded-xl shadow-lg">
+        
+        <header class="flex flex-col items-center pt-10 self-center bg-blue-900">
+            <img src="/src/img/car-wheel (1).png" alt="Logo Viaja+" class="mb-4 w-20 h-20 object-contain">
+            <h1 class="text-center text-white font-extrabold text-3xl md:text-4xl -mt-10 pb-10">Viaja<span class="text-6xl">+</span></h1>
+        </header>
+
+        <h2 class="pt-5 text-center text-blue-500 font-extrabold text-3xl md:text-3xl">Cadastro</h2>
+
+        <main class="flex flex-col items-center space-y-2">
+            <form id = "formulario" action="/src/login/cadastro-parte-dois.html" method="GET" class="bg-white m-5 shadow-lg rounded flex flex-col w-full max-w-2xl border border-gray-100">
+                <div class="flex flex-col p-10 space-y-2">
+                    <h2 class="pt-5 text-center text-blue-600 font-bold text-2xl md:text-3xl font-semibold">Preencha com os seus dados pessoais</h2>
+
+                    <label for="nome" class="mb-1">
+                        <span class="text-xl text-blue-700 font-extrabold md:font-semibold">Nome</span>
+                    </label>
+                    <input type="text" id="nome" class="outline-none bg-gray-100 p-2 rounded-xl hover:focus:outline-none hover:focus:ring-1 hover:focus:ring-blue-500" required placeholder="Nome do usuário...">
+
+                    <label for="email" class="mb-1">
+                        <span class="text-xl text-blue-700 font-extrabold md:font-semibold">Email</span>
+                    </label>
+                    <input type="email" id="email" class="outline-none bg-gray-100 p-2 rounded-xl hover:focus:outline-none hover:focus:ring-1 hover:focus:ring-blue-500" required placeholder="E-mail do usuário...">
+
+                    <label for="telefone" class="mb-1">
+                        <span class="text-xl text-blue-700 font-extrabold md:font-semibold">Telefone de Contato</span>
+                    </label>
+                    <input type="tel" id="telefone" class="outline-none bg-gray-100 p-2 rounded-xl hover:focus:outline-none hover:focus:ring-1 hover:focus:ring-blue-500" required placeholder="ex: +55(DDD) 9-XXXX-XXXX">
+
+                    
+                    <div class="flex justify-center mt-10 gap-4 w-full">
+                        <a href="../login/index.html" class="w-full md:w-1/4">
+                            <button type="button" class="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 w-full h-12">
+                                << Voltar
+                            </button>
+                        </a>
+                    
+                        <a href="#" class="w-full md:w-1/4">
+                            <button type="submit" class="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 w-full h-12">
+                                Próximo >>
+                            </button>
+                        </a>
+                    </div>
+                    
+                </div>
+            </form>
+        </main>
+    </div>
+    
+    
+</body>
+</html>
