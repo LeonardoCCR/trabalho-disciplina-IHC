@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Viaja+</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body class="font-[Poppins] bg-gray-200">
+    <header class="hidden lg:flex flex-row justify-center items-center bg-gray-300 p-3 gap-8">
+        <div>
+            <div class="flex flex-row gap-5">
+                <div class="flex flex-col items-center p-3 gap-2">
+                    <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                    <p class="text-sm text-black">Conta</p>
+                </div>
+                <div class="flex flex-col items-center p-3 gap-2">
+                    <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                    <p class="text-sm text-black">Viagens</p>
+                </div>
+                <div class="flex flex-col items-center p-3 gap-2">
+                    <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                    <p class="text-sm text-black">Configurações</p>
+                </div>
+            </div>
+    </header>
+
+    <main class="bg-white">
+        <div class="flex flex-col justify-center items-center gap-5 p-6">
+            <h1 class="text-2xl text-center text-blue-600">Corridas Recentes</h1>
+            <div class="flex flex-col bg-gray-100 rounded-lg p-5 shadow-md gap-4 w-full max-w-2xl">
+                <div class="flex flex-row gap-3 items-center justify-between w-full">
+                    <button
+                        class="bg-green-400 hover:bg-green-600 text-white font-bold p-3 rounded-lg transition duration-300 w-full">
+                        Corridas Recentes
+                    </button>
+                    <span class="material-symbols-outlined text-4xl text-blue-500 mx-2"
+                        style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 48;">
+                        arrow_back
+                    </span>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <!-- Exemplo de item de corrida -->
+                    <div class="flex bg-gray-200 flex-row justify-between p-3 gap-4 w-full rounded-lg">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-black text-xl font-semibold">Corrida 5</p>
+                            <p class="text-black text-sm">Origem: Rua A</p>
+                            <p class="text-black text-sm">Destino: Rua B</p>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <p class="text-black text-sm">Avaliar</p>
+                            <span class="material-symbols-outlined text-yellow-500">star</span>
+                        </div>
+                    </div>
+                    <div class="flex bg-gray-200 flex-row justify-between p-3 gap-4 w-full rounded-lg">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-black text-xl font-semibold">Corrida 4</p>
+                            <p class="text-black text-sm">Origem: Rua A</p>
+                            <p class="text-black text-sm">Destino: Rua B</p>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <p class="text-black text-sm">Avaliar</p>
+                            <span class="material-symbols-outlined text-yellow-500">star</span>
+                        </div>
+                    </div>
+                    <div class="flex bg-gray-200 flex-row justify-between p-3 gap-4 w-full rounded-lg">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-black text-xl font-semibold">Corrida 3</p>
+                            <p class="text-black text-sm">Origem: Rua A</p>
+                            <p class="text-black text-sm">Destino: Rua B</p>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <p class="text-black text-sm">Avaliar</p>
+                            <span class="material-symbols-outlined text-yellow-500">star</span>
+                        </div>
+                    </div>
+                    <div class="flex bg-gray-200 flex-row justify-between p-3 gap-4 w-full rounded-lg">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-black text-xl font-semibold">Corrida 2</p>
+                            <p class="text-black text-sm">Origem: Rua A</p>
+                            <p class="text-black text-sm">Destino: Rua B</p>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <p class="text-black text-sm">Avaliar</p>
+                            <span class="material-symbols-outlined text-yellow-500">star</span>
+                        </div>
+                    </div>
+                    <div class="flex bg-gray-200 flex-row justify-between p-3 gap-4 w-full rounded-lg">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-black text-xl font-semibold">Corrida 1</p>
+                            <p class="text-black text-sm">Origem: Rua A</p>
+                            <p class="text-black text-sm">Destino: Rua B</p>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <p class="text-black text-sm">Avaliar</p>
+                            <span class="material-symbols-outlined text-yellow-500">star</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="flex md:hidden flex-row justify-center items-center text-center bg-gray-300 p-3 gap-8">
+        <div class="flex flex-col items-center p-3 gap-2">
+            <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+            <p class="text-sm text-black">Conta</p>
+        </div>
+        <div class="flex flex-col items-center p-3 gap-2">
+            <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+            <p class="text-sm text-black">Viagens</p>
+        </div>
+        <div class="flex flex-col items-center p-3 gap-2">
+            <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+            <p class="text-sm text-black">Configurações</p>
+        </div>
+    </footer>
+</body>
+
+</html>
