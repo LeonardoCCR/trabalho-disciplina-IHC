@@ -725,8 +725,14 @@
   .-mt-10 {
     margin-top: calc(var(--spacing) * -10);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -877,6 +883,9 @@
   }
   .h-fit {
     height: fit-content;
+  }
+  .h-full {
+    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -1490,6 +1499,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -1622,6 +1634,9 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-red-100 {
+    border-color: var(--color-red-100);
   }
   .border-white {
     border-color: var(--color-white);
@@ -1888,6 +1903,12 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -1914,6 +1935,9 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -2106,6 +2130,9 @@
   }
   .text-blue-900 {
     color: var(--color-blue-900);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .text-red-600 {
     color: var(--color-red-600);
@@ -2592,11 +2619,38 @@
       }
     }
   }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-blue-500 {
+    &:focus {
+      --tw-ring-color: var(--color-blue-500);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
   .hover\:focus\:ring-1 {
     &:hover {
       @media (hover: hover) {
         &:focus {
           --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
+          box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+        }
+      }
+    }
+  }
+  .hover\:focus\:ring-2 {
+    &:hover {
+      @media (hover: hover) {
+        &:focus {
+          --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
           box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
         }
       }
@@ -2621,9 +2675,64 @@
       }
     }
   }
+  .max-md\:w-1\/3 {
+    @media (width < 48rem) {
+      width: calc(1/3 * 100%);
+    }
+  }
+  .sm\:-mb-10 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * -10);
+    }
+  }
+  .sm\:-mb-30 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * -30);
+    }
+  }
+  .sm\:-mb-40 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * -40);
+    }
+  }
+  .sm\:mb-10 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:h-full {
+    @media (width >= 40rem) {
+      height: 100%;
+    }
+  }
+  .sm\:h-screen {
+    @media (width >= 40rem) {
+      height: 100vh;
+    }
+  }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
+  .sm\:bg-white {
+    @media (width >= 40rem) {
+      background-color: var(--color-white);
+    }
+  }
   .md\:m-auto {
     @media (width >= 48rem) {
       margin: auto;
+    }
+  }
+  .md\:h-auto {
+    @media (width >= 48rem) {
+      height: auto;
+    }
+  }
+  .md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
     }
   }
   .md\:w-1\/3 {
@@ -2646,9 +2755,39 @@
       width: calc(4/12 * 100%);
     }
   }
+  .md\:w-20\/3 {
+    @media (width >= 48rem) {
+      width: calc(20/3 * 100%);
+    }
+  }
   .md\:w-auto {
     @media (width >= 48rem) {
       width: auto;
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
+  .md\:max-w-2xl {
+    @media (width >= 48rem) {
+      max-width: var(--container-2xl);
+    }
+  }
+  .md\:max-w-3xl {
+    @media (width >= 48rem) {
+      max-width: var(--container-3xl);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:rounded-xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-xl);
     }
   }
   .md\:text-3xl {

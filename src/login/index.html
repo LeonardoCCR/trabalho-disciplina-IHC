@@ -8,50 +8,42 @@
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <title>Viaja+</title>
 </head>
-<body class="bg-gray-200 flex justify-center items-center min-h-screen font-[Poppins]">
+<body class="bg-gray-200 min-h-screen flex justify-center items-center font-[Poppins]">
 
-    <div class = "bg-white w-full max-w-2xl bg- rounded-xl shadow-lg  " >
-    
+  <div class="flex flex-col h-screen w-screen md:max-w-2xl md:h-auto bg-white shadow-lg md:rounded-xl ">
 
-  <header class="flex flex-col items-center pt-10  self-center bg-blue-900">
-    <img src="/src/img/car-wheel (1).png" alt="Logo Viaja+" class="mb-4 w-20 h-20 object-contain">
-    <h1 class="text-center text-white font-extrabold text-3xl md:text-4xl -mt-10 pb-10">Viaja<span class = "text-6xl">+</span></h1>
-  </header>
-        <h2 class="pt-5 text-center text-blue-500 font-extrabold text-3xl md:text-3xl">Seja Bem-Vindo(a)</h2>
-    <main class ="flex flex-col items-center space-y-2">
+    <header class="flex flex-col items-center bg-blue-900 py-10">
+      <img src="/src/img/car-wheel (1).png" alt="Logo Viaja+" class="mb-4 w-20 h-20 object-contain">
+      <h1 class="text-center text-white font-extrabold text-3xl md:text-4xl -mt-10 pb-10">Viaja<span class = "text-6xl">+</span></h1>
+    </header>
 
-    <form action = "" method = "GET"  class=" bg-white m-5 shadow-lg rounded flex flex-col w-full max-w-2xl border border-gray-100">        
-    
-    <div class="flex flex-col p-10 space-y-2">
+    <main class="flex flex-col flex-grow items-center space-y-4">
 
-        <h2 class="pt-5 text-center text-blue-600 font-bold text-2xl md:text-3xl font-semibold">Fazer login no Viaja+</h2>
-        
-      <label for="email" class="mb-1">
-        <span class="text-xl text-blue-700 font-extrabold md:font-semibold">Email</span>
-      </label>  
-      <input type="email" id="email" class="outline-none bg-gray-100 p-2 rounded-xl hover:focus:outline-none hover:focus:ring-1 hover:focus:ring-blue-500" required placeholder="Insira seu email...">
+      <h2 class="pt-5 text-center text-blue-500 font-extrabold text-3xl md:text-3xl">Seja Bem-Vindo(a)</h2>
 
-      <label for="senha" class="mb-1">
-        <span class="text-xl text-blue-700 font-extrabold md:font-semibold">Senha</span>
-      </label>
-      <input autofocus required type="password" id="senha" class="outline-none bg-gray-100 p-2 rounded-xl hover:focus:outline-none hover:focus:ring-1 hover:focus:ring-blue-500" required placeholder="Insira sua senha...">
-     
-      <div class="flex justify-center mt-4 w-full">
+      <form action="" method="GET" class="bg-white flex flex-col w-full max-w-2xl border border-gray-100 shadow-lg rounded p-5 flex-grow">
 
-          <button type = "submit" class="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 w-full md:w-auto">
-            Entrar
-          </button>
-        
-      
-      </div>
+        <h2 class="text-center text-blue-600 font-bold text-2xl md:text-3xl mb-6">Fazer login no Viaja+</h2>
 
-      <a href = "/src/login/esqueceu-a-senha.html" class = "text-center text-blue-400 hover:underline hover:text-blue-500">Esqueci minha senha</a>
-      <a href = "cadastro.html" class = " text-center text-blue-400 hover:underline hover:text-blue-500">Não possuo cadastro</a>
-      
+        <label for="email" class="font-semibold text-blue-700 mb-1">Email</label>
+        <input type="email" id="email" class="bg-gray-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition" required placeholder="Insira seu email...">
 
-    </div>
-  </form>
-</main>
-    </div>
+        <label for="senha" class="font-semibold text-blue-700 mt-4 mb-1">Senha</label>
+        <input type="password" id="senha" class="bg-gray-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition" required placeholder="Insira sua senha...">
+
+        <button type="submit" class="bg-green-400 hover:bg-green-600 text-white font-bold py-3 rounded transition duration-300 w-full mt-4">
+          Entrar
+        </button>
+
+        <a href="/src/login/esqueceu-a-senha.html" class="text-center text-blue-400 hover:underline hover:text-blue-500 mt-4">Esqueci minha senha</a>
+        <a href="cadastro.html" class="text-center text-blue-400 hover:underline hover:text-blue-500 mt-2">Não possuo cadastro</a>
+
+      </form>
+
+    </main>
+
+  </div>
+
 </body>
+
 </html>
