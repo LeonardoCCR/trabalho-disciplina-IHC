@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <title>Viaja+</title>
 </head>
-<body class="bg-gray-200 flex justify-center items-center min-h-screen font-[Poppins]">
+<body class=" space-y-2 bg-gray-200 flex flex-col md:space-y-4 items-center min-h-screen font-[Poppins]">
 
   <div class="bg-white w-full max-w-2xl rounded-xl shadow-lg">
 
@@ -44,8 +44,9 @@
                 Finalizar
               </button>
             </a>
-          </div>
 
+          </div>
+          <small role = "status" class = "text-gray-400 font-semibold self-center mt-4">Passo 2 de 2</p>
         </div>
       </form>
 
@@ -63,6 +64,9 @@
       
 
     </main>
+    <footer class="bg-gray-300 w-full flex justify-center py-2">
+      <small class = " text-center">Trabalho desenvolvido para disciplina de IHC em 2025.</small>
+  </footer>
   </div>
 
   <script>
@@ -75,6 +79,6 @@
     const botaoFinalizado = document.getElementById("finalizado");
     botaoFinalizado.addEventListener('click', finalizar);
   </script>
-
+   
 </body>
 </html>
