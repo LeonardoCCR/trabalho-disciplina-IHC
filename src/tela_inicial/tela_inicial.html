@@ -13,20 +13,24 @@
 <body class="font-[Poppins] bg-gray-200">
     <header class="hidden lg:flex flex-row justify-center items-center bg-gray-300 p-3 gap-8">
         <div>
-            <div class="flex flex-row gap-5">
-                <div class="flex flex-col items-center p-3 gap-2">
-                    <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
-                    <p class="text-sm text-black">Conta</p>
-                </div>
-                <div class="flex flex-col items-center p-3 gap-2">
-                    <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
-                    <p class="text-sm text-black">Viagens</p>
-                </div>
-                <div class="flex flex-col items-center p-3 gap-2">
-                    <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
-                    <p class="text-sm text-black">Configurações</p>
-                </div>
-            </div>
+            <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                <p class="text-sm text-black">Conta</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_viagens" href="confirmar.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                <p class="text-sm text-black">Viagens</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_configuracoes" href="configuracoes.html"
+                class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                <p class="text-sm text-black">Configurações</p>
+            </a>
+        </div>
     </header>
 
     <main class="bg-white">
@@ -83,17 +87,25 @@
         </div>
     </main>
     <footer class="flex md:hidden flex-row justify-center items-center text-center bg-gray-300 p-3 gap-8">
-        <div class="flex flex-col items-center p-3 gap-2">
-            <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
-            <p class="text-sm text-black">Conta</p>
+        <div>
+            <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg"
+                ('botao_conta')">
+                <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                <p class="text-sm text-black">Conta</p>
+            </a>
         </div>
-        <div class="flex flex-col items-center p-3 gap-2">
-            <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
-            <p class="text-sm text-black">Viagens</p>
+        <div>
+            <a id="botao_viagens" href="confirmar.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                <p class="text-sm text-black">Viagens</p>
+            </a>
         </div>
-        <div class="flex flex-col items-center p-3 gap-2">
-            <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
-            <p class="text-sm text-black">Configurações</p>
+        <div>
+            <a id="botao_configuracoes" href="configuracoes.html"
+                class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                <p class="text-sm text-black">Configurações</p>
+            </a>
         </div>
     </footer>
 </body>
