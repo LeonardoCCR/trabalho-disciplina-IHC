@@ -12,5 +12,5 @@ function botaoVoltarTipo() {
 }
 
 function botaoVoltarInicial() {
-    window.location.href = 'tela_inicial.html';
+    window.location.href = 'confirmar.html';
 }
