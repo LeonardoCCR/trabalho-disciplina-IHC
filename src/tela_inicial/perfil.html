@@ -35,46 +35,37 @@
         </div>
     </header>
 
-    <main class="bg-white p-6">
-        <div class="flex flex-col justify-center items-center gap-5 text-xl">
+    <main class="bg-gray-100 min-h-screen flex justify-center items-center p-6">
+        <div class="bg-white p-5 flex flex-col w-full max-w-md justify-center items-center gap-5 rounded-lg shadow-md">
             <h1 class="text-2xl text-center text-blue-600">Perfil</h1>
-        </div>
-        <div class="bg-white p-5 flex flex-col justify-center items-center gap-5 rounded-lg">
-            <div class="flex flex-col gap-5 m-5 items-center">
-                <div class="flex flex-col md:flex-row items-center bg-gray-100 rounded-lg p-4 shadow-md gap-4">
-                    <img src="../img/icone_perfil.png" alt="icone_perfil" class="w-12 h-12">
-                </div>
-                <div class="flex flex-col gap-5 items-center justify-center">
-                    <p class="text-black text-sm">Nome do usuário</p>
-                </div>
+
+            <div class="flex flex-col items-center bg-gray-100 rounded-lg p-4 shadow-md gap-4 w-50">
+                <img src="../img/icone_perfil.png" alt="icone_perfil" class="w-16 h-16">
+                <p class="text-blue-600 text-lg">Nome do usuário</p>
             </div>
+
             <hr class="w-full border-black">
-            <div class="flex flex-col gap-5 m-5 items-center">
-                <div class="flex flex-row gap-5 items-center justify-center">
-                    <p>Alterar informações pessoais</p>
-                    <span class="material-symbols-outlined">
-                        arrow_drop_down
-                    </span>
-                </div>
-                <hr class="w-full border-black">
-                <div class="flex flex-row gap-5 items-center justify-center">
-                    <p>Cadastrar endereços de destino</p>
-                    <span class="material-symbols-outlined">
-                        arrow_drop_down
-                    </span>
-                </div>
-                <hr class="w-full border-black">
-                <div class="flex flex-row gap-5 items-center justify-center">
-                    <p>Gerenciar pagamentos</p>
-                    <span class="material-symbols-outlined">
-                        arrow_drop_down
-                    </span>
-                </div>
-                <hr class="w-full border-black">
+
+            <div class="flex flex-col gap-3 w-full">
+                <button class="flex flex-row items-center justify-between w-full bg-gray-100 p-3 rounded-lg shadow-sm">
+                    <p class="text-md text-blue-600">Alterar informações pessoais</p>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+
+                <button class="flex flex-row items-center justify-between w-full bg-gray-100 p-3 rounded-lg shadow-sm">
+                    <p class="text-md text-blue-600">Cadastrar endereços de destino</p>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+
+                <button class="flex flex-row items-center justify-between w-full bg-gray-100 p-3 rounded-lg shadow-sm">
+                    <p class="text-md text-blue-600">Gerenciar pagamentos</p>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
             </div>
         </div>
     </main>
-    <footer class="flex md:hidden flex-row justify-center items-center text-center bg-gray-300 p-3 gap-8">
+    <footer
+        class="fixed bottom-0 left-0 w-full flex md:hidden flex-row justify-center items-center text-center bg-gray-300 p-3 gap-8">
         <div>
             <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
                 <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
@@ -95,6 +86,7 @@
             </a>
         </div>
     </footer>
+
 </body>
 
 </html>

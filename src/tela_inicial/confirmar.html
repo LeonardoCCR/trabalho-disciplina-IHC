@@ -34,13 +34,12 @@
         </div>
     </header>
 
-    <main class="bg-white">
-        <div class="flex flex-col justify-center items-center gap-5">
+    <main class="bg-gray-100 min-h-screen flex flex-col justify-center items-center p-6">
+        <div class="bg-white p-5 flex flex-col w-full max-w-lg justify-center items-center gap-5 rounded-lg shadow-md">
             <div class="p-6">
                 <h1 class="text-2xl text-center text-blue-600">Olá, para onde você quer ir viajar hoje?</h1>
-
             </div>
-            <div class="flex flex-col gap-5 m-5">
+            <div class="flex flex-col gap-5 m-5 w-full max-w-md">
                 <div class="flex flex-col md:flex-row items-center bg-gray-100 rounded-lg p-4 shadow-md gap-4 w-full">
                     <div class="flex gap-2">
                         <img src="../img/icone_microfone.png" alt="icone_microfone" class="w-8 h-8">
@@ -66,7 +65,8 @@
                 </div>
             </div>
 
-            <div class="flex flex-col gap-5 mb-8 bg-gray-100 rounded-lg p-4 shadow-md w-85 justify-center items-center">
+            <div
+                class="flex flex-col gap-5 mb-8 bg-gray-100 rounded-lg p-4 shadow-md w-full max-w-md justify-center items-center">
                 <div id="div_tipo_veiculo">
                     <div class="flex flex-row gap-4 items-center justify-center text-center">
                         <p class="flex text-black">Qual o tipo de veículo desejado?</p>
@@ -76,12 +76,12 @@
                     <div id="botoes_tipo_veiculos"
                         class="flex grid grid-cols-2 grid-rows-1 justify-center items-center text-center w-full gap-4">
                         <button
-                            class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full">Moto</button>
+                            class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full shadow-sm">Moto</button>
                         <button
-                            class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full">Carro</button>
+                            class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full shadow-sm">Carro</button>
                     </div>
                     <button
-                        class="bg-green-400 hover:bg-green-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full"
+                        class="bg-green-400 hover:bg-green-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full shadow-sm"
                         onclick="botaoConfirmar()">Confirmar</button>
                 </div>
                 <div id="div_pagamento" class="hidden flex flex-col gap-4 text-center w-full">
@@ -96,19 +96,18 @@
                         </div>
                         <div class="flex flex-row gap-4">
                             <button
-                                class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full">Dinheiro</button>
+                                class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full shadow-sm">Dinheiro</button>
                             <button
-                                class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full">Cartão</button>
+                                class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full shadow-sm">Cartão</button>
                             <button
-                                class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full">PIX</button>
+                                class="bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 rounded-lg transition duration-300 mt-4 w-full shadow-sm">PIX</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
         <div class="flex flex-col justify-center items-center gap-5">
-            <img src="../img/mapa.png" alt="mapa" class="w-full">
+            <img src="../img/mapa.png" alt="mapa" class="w-full lg:w-auto h-full">
         </div>
     </main>
     <footer class="flex md:hidden flex-row justify-center items-center text-center bg-gray-300 p-3 gap-8">
