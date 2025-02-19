@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+    <title>Viaja+</title>
+</head>
+
+<body class="font-[Poppins] bg-gray-200">
+    <header class="hidden lg:flex flex-row justify-center items-center bg-green-300 p-3 gap-8">
+        <div>
+            <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                <p class="text-sm text-black">Conta</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_viagens" href="confirmar.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                <p class="text-sm text-black">Viagens</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_configuracoes" href="configuracoes.html"
+                class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                <p class="text-sm text-black">Configurações</p>
+            </a>
+        </div>
+    </header>
+
+    <main class="bg-blue-200 min-h-screen flex justify-center items-center p-6">
+        <div class="bg-white p-5 flex flex-col w-full max-w-md justify-center items-center gap-5 rounded-lg shadow-md">
+            <h1 class="text-2xl text-center text-blue-600">Perfil</h1>
+
+            <div class="flex flex-col items-center bg-gray-100 rounded-lg p-4 shadow-md gap-4 w-50">
+                <img src="../img/icone_perfil.png" alt="icone_perfil" class="w-16 h-16">
+                <p class="text-blue-600 text-lg">Nome do usuário</p>
+            </div>
+
+            <hr class="w-full border-black">
+
+            <div class="flex flex-col gap-3 w-full">
+                <button class="flex flex-row items-center justify-between w-full bg-gray-100 p-3 rounded-lg shadow-sm">
+                    <p class="text-md text-blue-600">Alterar informações pessoais</p>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+
+                <button class="flex flex-row items-center justify-between w-full bg-gray-100 p-3 rounded-lg shadow-sm">
+                    <p class="text-md text-blue-600">Cadastrar endereços de destino</p>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+
+                <button class="flex flex-row items-center justify-between w-full bg-gray-100 p-3 rounded-lg shadow-sm">
+                    <p class="text-md text-blue-600">Gerenciar pagamentos</p>
+                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer
+        class="fixed bottom-0 left-0 w-full flex md:hidden flex-row justify-center items-center text-center bg-green-300 p-3 gap-8">
+        <div>
+            <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                <p class="text-sm text-black">Conta</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_viagens" href="confirmar.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                <p class="text-sm text-black">Viagens</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_configuracoes" href="configuracoes.html"
+                class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                <p class="text-sm text-black">Configurações</p>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

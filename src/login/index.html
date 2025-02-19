@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <title>Viaja+</title>
+</head>
+
+<body class="space-y-10 bg-gray-200 min-h-screen flex flex-col md:space-y-4 justify-center items-center font-[Poppins]">
+
+  <div class="flex flex-col h-screen w-screen md:max-w-2xl md:h-auto bg-white shadow-lg md:rounded-xl ">
+
+    <header class="flex flex-col items-center bg-blue-900 py-10">
+      <img src="/src/img/car-wheel (1).png" alt="Logo Viaja+" class="mb-4 w-20 h-20 object-contain">
+      <h1 class="text-center text-white font-extrabold text-3xl md:text-4xl -mt-10 pb-10">Viaja<span
+          class="text-6xl">+</span></h1>
+    </header>
+
+    <main class="flex flex-col flex-grow items-center space-y-4">
+
+      <h2 class="pt-5 text-center text-blue-500 font-extrabold text-3xl md:text-3xl">Seja Bem-Vindo(a)</h2>
+
+      <form action="" method="GET"
+        class="bg-white flex flex-col w-full max-w-2xl border border-gray-100 shadow-lg rounded p-5 flex-grow">
+
+        <h2 class="text-center text-blue-600 font-bold text-2xl md:text-3xl mb-6">Fazer login no Viaja+</h2>
+
+        <label for="email" class="font-semibold text-blue-700 mb-1">Email</label>
+        <input type="email" id="email"
+          class="bg-gray-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition" required
+          placeholder="Insira seu email...">
+
+        <label for="senha" class="font-semibold text-blue-700 mt-4 mb-1">Senha</label>
+        <input type="password" id="senha"
+          class="bg-gray-100 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition" required
+          placeholder="Insira sua senha...">
+
+        <button type="submit"
+          class="bg-green-400 hover:bg-green-600 text-white font-bold py-3 rounded transition duration-300 w-full mt-4">
+          Entrar
+        </button>
+
+        <a href="/src/login/esqueceu-a-senha.html"
+          class="text-center text-blue-400 hover:underline hover:text-blue-500 mt-4">Esqueci minha senha</a>
+        <a href="cadastro.html" class="text-center text-blue-400 hover:underline hover:text-blue-500 mt-2">Não possuo
+          cadastro</a>
+
+      </form>
+
+    </main>
+    <footer class="bg-gray-300 w-full flex justify-center py-2">
+      <small class=" text-center">Trabalho desenvolvido para disciplina de IHC em 2025.</small>
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>

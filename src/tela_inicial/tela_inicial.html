@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Viaja+</title>
+</head>
+
+<body class="font-[Poppins] bg-gray-200">
+    <header class="hidden lg:flex flex-row justify-center items-center bg-green-300 p-3 gap-8">
+        <div>
+            <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                <p class="text-sm text-black">Conta</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_viagens" href="confirmar.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                <p class="text-sm text-black">Viagens</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_configuracoes" href="configuracoes.html"
+                class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                <p class="text-sm text-black">Configurações</p>
+            </a>
+        </div>
+    </header>
+
+    <main class="bg-white">
+        <div class="flex flex-col justify-center items-center gap-5">
+            <div class="p-6">
+                <h1 class="text-2xl text-center text-blue-600">Olá, para onde você quer ir viajar hoje?</h1>
+            </div>
+
+            <div class="flex flex-col gap-5 m-5">
+                <div class="flex flex-col md:flex-row items-center bg-gray-100 rounded-lg p-4 shadow-md gap-4 w-full">
+                    <div class="flex gap-2">
+                        <img src="../img/icone_microfone.png" alt="icone_microfone" class="w-8 h-8">
+                        <img src="../img/icone_buscar.png" alt="icone_buscar" class="w-8 h-8">
+                    </div>
+                    <input type="text" name="destino" id="destino" placeholder="Para onde ir?"
+                        class="text-black placeholder-gray-700 border rounded-lg p-2 flex-1 w-full md:w-auto bg-gray-100">
+                    <select name="quando" id="quando" class="text-black bg-gray-100 p-2 rounded-lg w-full md:w-auto">
+                        <option value="" disabled selected>Quando?</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center bg-gray-100 rounded-lg p-4 shadow-md gap-4 w-full">
+                    <div class="flex gap-2">
+                        <img src="../img/icone_microfone.png" alt="icone_microfone" class="w-8 h-8">
+                        <img src="../img/icone_buscar.png" alt="icone_buscar" class="w-8 h-8">
+                    </div>
+                    <input type="text" name="destino" id="destino" placeholder="Para onde ir?"
+                        class="text-black placeholder-gray-700 border rounded-lg p-2 flex-1 w-full md:w-auto bg-gray-100">
+                    <select name="quando" id="quando" class="text-black bg-gray-100 p-2 rounded-lg w-full md:w-auto">
+                        <option value="" disabled selected>Quando?</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 mb-8">
+                <button
+                    class="bg-green-400 hover:bg-green-600 text-white font-bold p-3 rounded-lg transition duration-300 w-full mt-4">Buscar
+                    viagem</button>
+                <button
+                    class="bg-green-400 hover:bg-green-600 text-white font-bold p-3 rounded-lg transition duration-300 w-full mt-4">Endereços
+                    cadastrados</button>
+                <button
+                    class="bg-green-400 hover:bg-green-600 text-white font-bold p-3 rounded-lg transition duration-300 w-full mt-4">Corridas
+                    recentes</button>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 bg-gray-200">
+            <div class="flex flex-col p-6 justify-center items-center gap-5">
+                <img src="../img/icone_localizacao.png" alt="icone_localizacao" class="w-30 h-30">
+                <button
+                    class="bg-blue-400 hover:bg-blue-500 text-white font-bold p-5 rounded-lg transition duration-300 w-full mt-4">Usar
+                    localização atual</button>
+            </div>
+        </div>
+    </main>
+    <footer class="flex md:hidden flex-row justify-center items-center text-center bg-green-300 p-3 gap-8">
+        <div>
+            <a id="botao_conta" href="perfil.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_conta.png" alt="icone_conta" class="w-12 h-12">
+                <p class="text-sm text-black">Conta</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_viagens" href="confirmar.html" class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_carro.png" alt="icone_carro" class="w-12 h-12">
+                <p class="text-sm text-black">Viagens</p>
+            </a>
+        </div>
+        <div>
+            <a id="botao_configuracoes" href="configuracoes.html"
+                class="flex flex-col items-center p-3 gap-2 rounded-lg">
+                <img src="../img/icone_configuracoes.png" alt="icone_configuracoes" class="w-12 h-12">
+                <p class="text-sm text-black">Configurações</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
