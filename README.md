@@ -1,6 +1,6 @@
 
 <h1>Where is the index.html file ?</h1>
-<p>The index.html is located in the "login" folder.</p>
+<p>The index.html is located in the "src/login" folder.</p>
 
 <hr>
 
