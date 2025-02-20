@@ -1,4 +1,11 @@
 
+<h1>Where is the index.html file ?</h1>
+<p>The index.html is located in the "login" folder.</p>
+
+<hr>
+
+<h2>Principios que guiaram o desenvolvimento deste trabalho:</h2>
+
 1. Acessibilidade
 
 Buscamos garantir que todas as páginas sejam acessíveis a diferentes públicos, incluindo pessoas com deficiências. Implementações como o uso adequado de rótulos (labels) associados a campos de entrada, botões claramente identificáveis e foco automático nos elementos relevantes contribuem para facilitar a navegação e interação com o conteúdo.
